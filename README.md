@@ -183,7 +183,7 @@ This package contains the furo data components.
 - [furo-rel-exists](https://components.furo.pro/?t=FuroRelExists) checks for a specific rel in links
 - [furo-reverse-deep-link](https://components.furo.pro/?t=FuroReverseDeepLink) create query param object from HATEOAS
 - [furo-sortby-container](https://components.furo.pro/?t=FuroSortbyContainer) create query param object for sort
-...
+- ...
 
 ### data-input.js
 
@@ -214,7 +214,7 @@ an API to simplify the work with @furo/data (something like two way data binding
 - [furo-data-text-input](https://components.furo.pro/?t=FuroDataTextInput) Bind a entityObject.field to a text input
 - [furo-data-textarea-input](https://components.furo.pro/?t=FuroDataTextareaInput)  Bind a entityObject.field to a textarea input
 - [furo-data-time-input](https://components.furo.pro/?t=FuroDataTimeInput)  Bind a entityObject.field to a time input
-...
+- ...
 
 
 ### data-ui.js
@@ -228,7 +228,7 @@ UI elements for furo data
 - [furo-data-table-toggle](https://components.furo.pro/?t=FuroDataTableToggle) helper for furo-data-table
 - [furo-data-hide-content](https://components.furo.pro/?t=FuroDataHideContent) hide content container with boolean fields
 - [furo-type-renderer](https://components.furo.pro/?t=FuroTypeRenderer) display component to render fields according of the type
-...
+- ...
 
 ### data-util.js
 Utility components for data
@@ -267,7 +267,7 @@ creation of forms simpler.
 - [furo-form](https://components.furo.pro/?t=FuroForm) form container
 - [furo-form-layouter](https://components.furo.pro/?t=FuroFormLayouter) form auto layouter
 - [furo-input-row](https://components.furo.pro/?t=FuroInputRow) *DEPRECATED* label slot layout
-...
+- ...
 
 ### framework.js
 
@@ -331,7 +331,7 @@ If you look for input components with data binding, look at the @furo/data-input
 - [furo-text-input](https://components.furo.pro/?t=FuroTextInput) text input element
 - [furo-textarea-input](https://components.furo.pro/?t=FuroTextareaInput) textarea input element
 - [furo-time-input](https://components.furo.pro/?t=FuroTimeInput) time input element
-...
+- ...
 
 
 ### layout.js
@@ -349,7 +349,7 @@ Just take a look at the demos and you will get the idea.
 - [furo-split-view](https://components.furo.pro/?t=FuroSplitView) splitted layout
 - [furo-vertical-flex](https://components.furo.pro/?t=FuroVerticalFlex) vertical alignment of stuff
 - [furo-vertical-scroller](https://components.furo.pro/?t=FuroVerticalScroller) vertical scroll
-...
+- ...
 
 
 ### navigation.js
@@ -374,7 +374,7 @@ notification components for furo
 - [furo-snackbar-display](https://components.furo.pro/?t=FuroSnackbarDisplay) helper component to show a snackbar
 - [furo-banner](https://components.furo.pro/?t=FuroBanner) a banner
 - [furo-banner-display](https://components.furo.pro/?t=FuroBannerDisplay) helper component to show a banner
-...
+- ...
 
 ### route.js
 
@@ -389,7 +389,7 @@ Furo routing components
 - [furo-pages](https://components.furo.pro/?t=FuroPages) Simple content switcher
 - [furo-panel-coordinator](https://components.furo.pro/?t=FuroPanelCoordinator) Complex content switcher based on furo-tree
 - [furo-qp-changer](https://components.furo.pro/?t=FuroQpChanger) deep linking helper
-...
+- ...
 
 
 ### timing.js
@@ -401,7 +401,7 @@ Furo timing related components.
 
 - [furo-de-bounce](https://components.furo.pro/?t=FuroDeBounce) event de bouncer
 - [furo-interval-pulse](https://components.furo.pro/?t=FuroIntervalPulse) trigger an event in intervals
-...
+- ...
 
 
 
@@ -423,7 +423,7 @@ A collection of utility elements.
 - [furo-navigation-pad](https://components.furo.pro/?t=FuroNavigationPad) keyboard navigation helper
 - [furo-pretty-json](https://components.furo.pro/?t=FuroPrettyJson) pretty prints json data
 - [furo-put-clipboard](https://components.furo.pro/?t=FuroPutClipboard) write content to clipboard
-...
+- ...
 
 ### ui5.js
 
