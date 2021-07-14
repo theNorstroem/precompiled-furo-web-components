@@ -1,9 +1,12 @@
 import ('./app.js');
+import ('./ui5DisplayRegistry.js');
+import ('./experiments.js');
 import ('./input.js');
 import ('./layout.js');
 import ('./data.js');
 import ('./data-input.js');
 import ('./ui5.js');
+import ('./ui5Icons.js');
 import ('./config.js');
 import ('./data-ui.js');
 import ('./data-util.js');

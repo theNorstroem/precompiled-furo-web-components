@@ -1,11 +1,12 @@
 {
   "name": "@furo/precompiled",
-  "version": "1.4.3-RC1",
+  "version": "1.4.3-RC2",
   "main": "dist/collection.js",
   "dependencies": {
-    "@furo/collection": "^1.4.3",
-    "@furo/doc-helper": "^1.7.3",
-    "@furo/ui5": "^0.35.4"
+    "@furo/collection": "1.4.3",
+    "@furo/doc-helper": "1.7.3",
+    "@furo/experiments": "1.6.3",
+    "@furo/ui5": "0.35.4"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.14.7",

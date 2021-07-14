@@ -16,3 +16,7 @@ Install ALL components including the UI5 components *not recomended*
 ```html
   <script src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3/dist/collection.js"></script>
 ```
+
+
+## Compatibility Table
+![compat](compat.png)
