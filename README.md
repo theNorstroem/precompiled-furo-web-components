@@ -43,7 +43,13 @@ npm i -S @furo/precompiled
 
 
 ## Init file [optional]
-When you want to use the **data** components or want to set the locales or install your translations, define and load the `init.js` from your page.
+When you want to use the **data** components you have to install the specs that you have gerated with furo. This is a good 
+place to do it. Maybe you want to set the locales or install your translations too.
+
+To load the `init.js` from your page, do the following in your index.html.
+
+> Load the init.js before you load the other packages.
+> Because some of them are dependant to the settings you do in the init and some will switch to a default setup.
 
 [*index.html*]
 ```html
