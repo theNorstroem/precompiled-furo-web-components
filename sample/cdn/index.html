@@ -15,11 +15,12 @@
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3-RC2/dist/layout.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3-RC2/dist/app.js"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3-RC2/dist/input.js"></script>
+
 
 
   <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3-RC2/dist/data-ui.js"></script>
   <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3-RC2/dist/data.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3-RC2/dist/input.js"></script>
 
   <!-- uncomment the following lines to activate the ui5 elements. Warnig, they are very big and will slow down your initial load
   <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3-RC2/dist/ui5Icons.js"></script>
@@ -39,13 +40,59 @@
 
 <body @-show-tooltip-requested="--t">
 
+<furo-card header-text="Data demo">
+  <p>
+    Press the load button to load some data for the charts.
+  </p>
+  <furo-button slot="action" label="load data" primary="" @-click="--btnListClicked"></furo-button>
+</furo-card>
+
+
 <furo-card header-text="radar">
   <furo-chart-display chart-type="radar" sparkline="" fixed-height="170">
     <furo-data-chart-binder ƒ-bind-data="--projectDAO(*.entities)" data-field="data.cost_limit.units" category-field="data.description"></furo-data-chart-binder>
   </furo-chart-display>
 </furo-card>
 
-<furo-button label="load data" primary="" @-click="--btnListClicked"></furo-button>
+  <furo-card header-text="minline">
+    <furo-chart-display chart-type="line" fixed-height="170" sparkline="">
+      <furo-data-chart-binder ƒ-bind-data="--projectDAO(*.entities)" data-field="data.cost_limit.units" category-field="data.description"></furo-data-chart-binder>
+    </furo-chart-display>
+  </furo-card>
+
+
+  <furo-card header-text="radialBar">
+    <furo-chart-display chart-type="radialBar" fixed-height="170" sparkline="">
+      <furo-data-chart-binder ƒ-bind-data="--projectDAO(*.entities)" chart-stroke-width="6" data-field="data.end.day" category-field="data.description"></furo-data-chart-binder>
+    </furo-chart-display>
+  </furo-card>
+
+  <furo-card header-text="bar horizontal">
+    <furo-chart-display chart-type="bar" fixed-height="170" plot-horizontal="" sparkline="">
+      <furo-data-chart-binder ƒ-bind-data="--projectDAO(*.entities)" data-field="data.cost_limit.units" category-field="data.description"></furo-data-chart-binder>
+    </furo-chart-display>
+  </furo-card>
+
+  <furo-card header-text="pie">
+    <furo-chart-display chart-type="pie" tooltip="" fixed-height="170" sparkline="">
+      <furo-data-chart-binder ƒ-bind-data="--projectDAO(*.entities)" data-field="data.cost_limit.units" category-field="data.description"></furo-data-chart-binder>
+    </furo-chart-display>
+  </furo-card>
+
+  <furo-card header-text="donut">
+    <furo-chart-display chart-type="donut" tooltip="" fixed-height="170" sparkline="">
+      <furo-data-chart-binder ƒ-bind-data="--projectDAO(*.entities)" data-field="data.cost_limit.units" category-field="data.description"></furo-data-chart-binder>
+    </furo-chart-display>
+  </furo-card>
+
+  <furo-card header-text="parallel bar">
+    <furo-chart-display chart-type="bar" fixed-height="170" sparkline="">
+      <furo-data-chart-binder ƒ-bind-data="--projectDAO(*.entities)" data-field="data.cost_limit.units" category-field="data.description" legend-label="Cost"></furo-data-chart-binder>
+      <furo-data-chart-binder ƒ-bind-data="--projectDAO(*.entities)" data-field="data.cost_limit.units" category-field="data.description" legend-label="Secondary"></furo-data-chart-binder>
+    </furo-chart-display>
+  </furo-card>
+
+
 <furo-deep-link ƒ-trigger="--btnListClicked" service="ProjectService" @-hts-out="--hts"></furo-deep-link>
 <furo-collection-agent service="ProjectService" ƒ-hts-in="--hts" ƒ-list="--changeDataClicked" list-on-hts-in="" @-response-hts-updated="--responseHts" @-response="--collectionResponse">
 </furo-collection-agent>
@@ -53,79 +100,6 @@
 <furo-data-object type="project.ProjectCollection" ƒ-inject-raw="--collectionResponse" @-object-ready="--projectDAO">
 </furo-data-object>
 
-<fixed-tooltip-display ƒ-show="--t"></fixed-tooltip-display>
-<furo-demo-snippet flow>
-  <template>
-    <!-- This button acts as a light switch -->
-    <furo-button @-click="--lightSwitchClicked" label="i am a lightswitch"></furo-button>
-    <light-bulb ƒ-toggle="--lightSwitchClicked"></light-bulb>
-  </template>
-</furo-demo-snippet>
-
-
-<!-- use the component as many times you want, even before the definition-->
-<audio-card @-eject="--ejectClk" ƒ-remove="--ejectClk" ƒ-set-source="--soundSource(*.dataset.src)"
-            ƒ-set-image="--mediaSource"
-            ƒ-set-title="--soundSource(*.label)"></audio-card>
-
-<hr>
-<div ƒ-remove="--ejectClk">
-
-  <furo-button primary outline label="music" data-src="/assets/InTheTown -NoName.m4a"
-               @-click="--soundSource(*.srcElement)"
-  ></furo-button>
-
-  <furo-button primary outline label="speak" data-src="/assets/Zh-dialect_Guangzhou_sample.ogg"
-               @-click="--soundSource(*.srcElement)"
-  ></furo-button>
-
-  <furo-button danger outline label="change image" data-src="/assets/pixelveith1x1.png"
-               @-click="--mediaSource(*.srcElement.dataset.src)"
-  ></furo-button>
-
-</div>
-
-<!-- define the components  -->
-
-<furo-fbp name="audio-card" expose="setSource,setTitle,setImage">
-  <template>
-    <style>
-      :host {
-        display: block;
-        width: 330px;
-      }
-    </style>
-    <!-- use the component as many times you want, even before the definition-->
-    <furo-card header-text="Language Sample Demo" ƒ-.header-text="|--setTitle"
-               secondary-text="German ABCDEF..." ƒ-.secondary-text="|--setSource">
-      <language-sample
-        ƒ-play="--playClicked"
-        ƒ-pause="--pauseClicked"
-        ƒ-rewind="--rewindClicked"
-        ƒ-set-source="|--setSource"></language-sample>
-      <img slot="media" src="https://components.furo.pro/assets/images/hamburg.jpg" ƒ-.src="|--setImage" alt="">
-      <furo-horizontal-flex space slot="action">
-        <furo-button primary="" label="▶" @-click="--playClicked"></furo-button>
-        <furo-button label="‖" @-click="--pauseClicked"></furo-button>
-        <!-- click will send you a 1 or more, so we set 0 as data-time and send it with the event -->
-        <furo-button title="be kind" label="◁◁" data-time="0"
-                     @-click="--rewindClicked(*.srcElement.dataset.time)"></furo-button>
-        <furo-button danger="" label="⏏" @-click="^^eject"></furo-button>
-      </furo-horizontal-flex>
-    </furo-card>
-  </template>
-</furo-fbp>
-
-
-<furo-fbp name="language-sample" expose="play,pause,rewind,setSource">
-  <template>
-    <audio ƒ-play="|--play"
-           ƒ-pause="|--pause"
-           ƒ-.current-time="|--rewind"
-           ƒ-.src="|--setSource"
-           src="https://upload.wikimedia.org/wikipedia/commons/9/92/German_alphabet-2.ogg"></audio>
-  </template>
-</furo-fbp>
 
 
 <noscript>
@@ -135,6 +109,9 @@
 
 </body>
 
+<furo-xxx-input @-field-value-changed="--displayNameInput">
+<furo-xxx-input @-field-value-changed="--otherNameInput">
+  <furo-button ƒ-.data-name="--displayNameInput" ƒ-.data-other="--otherNameInput" @-click="^^some-event(*.dataset)"></furo-button>
 <script>
   // activate FBP on body
   const fbphandle = new DOMFBP(document.body)

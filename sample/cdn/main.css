@@ -101,5 +101,8 @@ body {
 }
 
 furo-card{
-  width: 330px;
+  margin: 10px;
+  width: 300px;
+  height: 250px;
+  float: left;
 }
