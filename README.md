@@ -5,7 +5,7 @@ There is no build step needed. It is a convenient way to use the components to p
 with FBP without a complex installation procedure. When you know that your ideas work, transfer them 1:1 to a web component, 
 so others can install, use and extend them.    
 
-> **Warning** This package was created for our demo systems, so we can use and show our components in a HUGO generated page.
+> **Warning** This package was created teach furo FBP and for creating our demo systems , so we can use and show our components in a HUGO generated page.
 Some of the files are very big at the moment, because they are not optimized yet.
 
 ## Demo
@@ -13,10 +13,16 @@ Run `npm run stard-cdn-sample` to start the cdn based sample.
 
 ## Installation 
 
-The version of this package represents the version of @furo/collection
+The version of this package represents the versioning of @furo/collection.
+
+> **Note**
+> Keep in mind that you can not mix CDN , NPM and self builded variants of the installation.
 
 ### CDN
-Install ALL components including the UI5 components *not recomended*
+You can use the components by refering to them via the CDN. This is good when your project is public and your server is slower then the CDN.
+
+
+
 ```html
 <script type="module" src="/config/init.js"></script>
 <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3/dist/furo-fbp.js"></script>
@@ -28,9 +34,29 @@ Install ALL components including the UI5 components *not recomended*
 
 ### NPM
 
+When your clients are in a closed environment and can not reach the real internet, prefer this variant. All files are delivered 
+from your servers. 
+
 ```bash
 npm i -S @furo/precompiled
 ```
+
+### Build by your self and using `/dist`
+When you need some other components, which are not installable as precompiled versions or want to add your own components,
+you can clone this repository and extend it by your or the installed components. Make sure that they are
+referenced by `collection.js` or entered as an entry point in the `rollup.config.js`. You can copy the /dist folder to 
+your project or make it available for your projects, by pushing them to npm or by serving them via your CDN.
+
+> This kind of installation is only one step away from a set up with open wc and working with [web dev server](https://modern-web.dev/docs/dev-server/overview/), which
+> do not need a build step during the development phase. Consider to switch to this variant if your project gains complexity. 
+
+
+## Usage
+To use the components you have to load the package where they reside in. You will notice, that some components have their
+own js file. This is because they are used from different packages and is needed to keep a clean dependeny tree. It is ok 
+to load this components directly, when you do not need something other, or load the package where they reside. It has no 
+side effect if load them twice. Your browser knows what it have to do.
+
 
 ```html
 <script type="module" src="/config/init.js"></script>
@@ -42,7 +68,7 @@ npm i -S @furo/precompiled
 ```
 
 
-## Init file [optional]
+## The init file [optional]
 When you want to use the **data** components you have to install the specs that you have gerated with furo. This is a good 
 place to do it. Maybe you want to set the locales or install your translations too.
 
