@@ -1,6 +1,6 @@
 {
   "name": "@furo/precompiled",
-  "version": "1.4.3-RC2",
+  "version": "1.4.3",
   "main": "dist/collection.js",
   "dependencies": {
     "@furo/collection": "1.4.3",
