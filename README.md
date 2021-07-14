@@ -42,10 +42,13 @@ npm i -S @furo/precompiled
 ```
 
 ### Build by your self and using `/dist`
-When you need some other components, which are not installable as precompiled versions or want to add your own components,
-you can clone this repository and extend it by your or the installed components. Make sure that they are
-referenced by `collection.js` or entered as an entry point in the `rollup.config.js`. You can copy the /dist folder to 
-your project or make it available for your projects, by pushing them to npm or by serving them via your CDN.
+When you need some other components, which are not installable as precompiled versions. Or you want to add your own components or compositions,
+you can clone this repository and extend it by your own component, or the installed components. 
+
+Make sure that they are referenced by `collection.js` via a file that represents your *package*.
+You can also add it as an entry point in the `rollup.config.js`. 
+
+You can copy the /dist folder to your project or make it available for your projects on some other way. Do this by pushing them to npm or by serving them via your CDN.
 
 > This kind of installation is only one step away from a set up with open wc and working with [web dev server](https://modern-web.dev/docs/dev-server/overview/), which
 > do not need a build step during the development phase. Consider to switch to this variant if your project gains complexity. 
