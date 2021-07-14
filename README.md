@@ -9,8 +9,10 @@ The files are very big at the moment, because they are not optimized yet.
 
 ## Installation 
 
+The version of this package represents the version of @furo/collection
+
 ### CDN
 Install ALL components including the UI5 components *not recomended*
 ```html
-  <script src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.0.0/dist/collection.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3/dist/collection.js"></script>
 ```
