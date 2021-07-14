@@ -440,6 +440,7 @@ For seamless integration into the Furo environment, we have slightly extended so
 > All not listed components can be obtained directly from SAP
 
 ### Elements
+
 - [furo-ui5-data-text-input](https://components.furo.pro/?t=FuroUi5DataTextInput) a text input component
 - [furo-ui5-data-textarea-input](https://components.furo.pro/?t=FuroUi5DataTextareaInput) a text area input component
 - [furo-ui5-data-number-input](https://components.furo.pro/?t=FuroUi5DataNumberInput) a number input component
@@ -454,13 +455,13 @@ For seamless integration into the Furo environment, we have slightly extended so
 - [furo-ui5-data-reference-search](https://components.furo.pro/?t=FuroUi5DataReferenceSearch) a reference search component
 - [furo-ui5-data-segmented-button](https://components.furo.pro/?t=FuroUi5DataSegmentedButton) a segmented button component
 - [furo-ui5-data-toggle-button](https://components.furo.pro/?t=FuroUi5DataToggleButton) a toggle button component
-
 - [furo-ui5-data-display](https://components.furo.pro/?t=FuroUi5DataDisplay) a display field component
 - [furo-ui5-button](https://components.furo.pro/?t=FuroUi5Button) a simple button with convenience functions
 - [furo-ui5-busyindicator](https://components.furo.pro/?t=FuroUi5Busyindicator) component to signal that some operation is going on
 - [furo-ui5-data-table](https://components.furo.pro/?t=FuroUi5DataTable) component to display data in tabular form
 
 ### Compositions
+
 - [furo-ui5-pagination](https://components.furo.pro/?t=FuroUI5Pagination) a pagination bar
 - [furo-ui5-data-text-input-labeled](https://components.furo.pro/?t=FuroUi5DataTextInputLabeled) a labeled text input component
 - [furo-ui5-data-textarea-input-labeled](https://components.furo.pro/?t=FuroUi5DataTextareaInputLabeled) a labeled text area input component
