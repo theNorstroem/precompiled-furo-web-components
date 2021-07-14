@@ -1,10 +1,12 @@
 # @furo/precompiled
 
-Use the precompiled components directly in your HTML file.
-No build step needed. 
+The @furo/precompiled is for those who want to use the furo componetnt directly in HTML.
+There is no build step needed. It is a convenient way to use the components to prototype some ideas or just play around 
+with FBP without a complex installation procedure. When you know that your ideas work, transfer them 1:1 to a web component, 
+so others can install, use and extend them.    
 
-> **Warning** This package was created for our demo systems, so we can use and show our stuff in a HUGO generated page.
-The files are very big at the moment, because they are not optimized yet.
+> **Warning** This package was created for our demo systems, so we can use and show our components in a HUGO generated page.
+Some of the files are very big at the moment, because they are not optimized yet.
 
 ## Demo
 Run `npm run stard-cdn-sample` to start the cdn based sample.
@@ -400,7 +402,7 @@ Compliant to SAP Fiori design language. Rich feature set. Includes all enterpris
 ## What is inside
 
 For seamless integration into the Furo environment, we have slightly extended some UI5 components.
-> All not listed components can be obtained directly from SAP via the NPM packages.
+> All not listed components can be obtained directly from SAP
 
 ### Elements
 - [furo-ui5-data-text-input](https://components.furo.pro/?t=FuroUi5DataTextInput) a text input component
