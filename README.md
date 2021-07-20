@@ -127,6 +127,7 @@ Init.translateStaticTypeMessages(locale);
 
 ```
 
+
 ## Compatibility Table
 ![compat](compat.png)
 
