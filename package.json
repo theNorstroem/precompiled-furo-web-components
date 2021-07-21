@@ -1,6 +1,6 @@
 {
   "name": "@furo/precompiled",
-  "version": "1.4.7-RC2",
+  "version": "1.4.7",
   "main": "dist/collection.js",
   "devDependencies": {
     "@babel/preset-env": "^7.14.7",
