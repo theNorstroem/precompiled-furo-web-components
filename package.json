@@ -1,13 +1,13 @@
 {
   "name": "@furo/precompiled",
-  "version": "1.5.2-RC1",
+  "version": "1.5.5-RC1",
   "main": "dist/collection.js",
   "devDependencies": {
     "@babel/preset-env": "^7.14.7",
-    "@furo/collection": "1.5.2",
-    "@furo/doc-helper": "1.8.2",
-    "@furo/experiments": "1.7.2",
-    "@furo/ui5": "0.37.0",
+    "@furo/collection": "1.5.5",
+    "@furo/doc-helper": "1.8.5",
+    "@furo/experiments": "1.7.3",
+    "@furo/ui5": "0.38.0",
     "@open-wc/building-rollup": "^1.10.0",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
