@@ -1,5 +1,5 @@
-import {LitElement, html, css} from 'lit-element';
-import {Theme} from "@furo/framework/src/theme.js"
+import {LitElement, html, css} from 'lit';
+
 import {FBP} from "@furo/fbp";
 
 /**
@@ -57,7 +57,7 @@ class LightBulb extends FBP(LitElement) {
    */
   static get styles() {
     // language=CSS
-    return Theme.getThemeForComponent('LightBulb') || css`
+    return  css`
         :host {
             display: inline-block;
         }
@@ -95,11 +95,15 @@ class LightBulb extends FBP(LitElement) {
     // language=HTML
     return html`
       <style>
-        furo-icon {
+        :host {
+          display: block;
+          font-size: 40px;
           color:${this.color}
+          
         }
+        
       </style>
-      <furo-icon icon="lightbulb-outline"></furo-icon>
+      ☀
     `;
   }
 }

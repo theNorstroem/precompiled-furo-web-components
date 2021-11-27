@@ -1,6 +1,6 @@
 // eslint-disable-next-line max-classes-per-file
 import {FBP} from '@furo/fbp/src/fbp.js';
-import {LitElement, html, css} from 'lit-element';
+import {LitElement, html, css} from 'lit';
 
 /**
  * `furo-lit-fbp`

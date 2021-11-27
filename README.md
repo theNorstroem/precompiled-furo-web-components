@@ -29,7 +29,7 @@ You can use the components by refering to them via the CDN. This is good when yo
 <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3/dist/framework.js"></script>
 
 <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3/dist/layout.js"></script>
-<script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@1.4.3/dist/app.js"></script>
+
 ```
 
 ### NPM
@@ -67,7 +67,7 @@ side effect if load them twice. Your browser knows what it have to do.
 <script type="module" src="/node_modules/@furo/precompiled/dist/framework.js"></script>
 
 <script type="module" src="/node_modules/@furo/precompiled/dist/layout.js"></script>
-<script type="module" src="/node_modules/@furo/precompiled/dist/app.js"></script>
+
 ```
 
 
@@ -146,9 +146,6 @@ This module contains some additional files like `DOMFBP.js` which is needed when
 ### collection.js
 This file contains the full set of the precompiled package and is huge.
 
-### app.js
-
-A collection of elements, that can be used to structure your app’s layout.
 
 #### Elements
 
@@ -186,11 +183,6 @@ This package contains the furo data components.
 - [furo-sortby-container](https://components.furo.pro/?t=FuroSortbyContainer) create query param object for sort
 - ...
 
-### data-input.js
-
-This package contains the furo data input components.
-The @furo/data-input components are mostly wrappers around the @furo/input components with
-an API to simplify the work with @furo/data (something like two way data binding) to create Forms and interact with a REST API.
 
 #### Elements
 
@@ -218,9 +210,6 @@ an API to simplify the work with @furo/data (something like two way data binding
 - ...
 
 
-### data-ui.js
-
-UI elements for furo data
 
 #### Elements
 
@@ -231,8 +220,6 @@ UI elements for furo data
 - [furo-type-renderer](https://components.furo.pro/?t=FuroTypeRenderer) display component to render fields according of the type
 - ...
 
-### data-util.js
-Utility components for data
 
 #### Elements
 
@@ -243,23 +230,6 @@ Utility components for data
 
 Utils for the documentation system.
 
-
-### experiments.js
-
-Experimental components. APIs and location of the elements itself can change.
-
-This components does not have any **tests**.
-
-- furo-capture-audio
-- furo-capture-video
-- furo-catalog
-- furo-qr-scanner
-- furo-speech-recognition
-
-### form.js
-
-This package contains the furo form components, which are helpers to make the
-creation of forms simpler.
 
 #### Elements
 
@@ -289,23 +259,12 @@ This package contains the furo "framework" classes.
 ### furo-fbp.js
 The core furo FBP packages and classes. Read more on [fbp.furo.pro](fbp.furo.pro)
 
-### icon.js
-(Material Design)
-
-This package supplies the icons used in the other components of furo.
-
-If you want to create a iconset by your own, look at the examples in the repo.
 
 #### Elements
 
 - [furo-icon](https://components.furo.pro/?t=FuroIcon) displays an icon
 
 
-### input.js
-
-Input components for furo. With this components you can design your form or any other data input for your app.
-
-If you look for input components with data binding, look at the @furo/data-input components. This are the components used there.
 
 #### Elements
 
@@ -351,11 +310,7 @@ Just take a look at the demos and you will get the idea.
 - [furo-vertical-flex](https://components.furo.pro/?t=FuroVerticalFlex) vertical alignment of stuff
 - [furo-vertical-scroller](https://components.furo.pro/?t=FuroVerticalScroller) vertical scroll
 - ...
-
-
-### navigation.js
-
-Furo navigation components
+ 
  
 **needs a furo spec to work**
 #### Elements
@@ -364,10 +319,7 @@ Furo navigation components
 - [furo-panel-head](https://components.furo.pro/?t=FuroPanelHead)  dislay a navigationNode as title
 - [furo-tree](https://components.furo.pro/?t=FuroTree)  tree navigation menu
 
-
-### notification.js
-
-notification components for furo
+ 
 
 #### Elements
 
@@ -392,10 +344,7 @@ Furo routing components
 - [furo-qp-changer](https://components.furo.pro/?t=FuroQpChanger) deep linking helper
 - ...
 
-
-### timing.js
-
-Furo timing related components.
+ 
 
 #### Elements
 
