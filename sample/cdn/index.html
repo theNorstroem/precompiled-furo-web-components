@@ -11,31 +11,34 @@
   <!-- init is needed because we use data components -->
   <script type="module" src="/config/init.js"></script>
 
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.11/dist/furo-fbp.js"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.11/dist/doc-helper.js"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.11/dist/layout.js"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.11/dist/ui5.js"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.11/dist/data.js"></script>
-  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.1/dist/util.js"></script>
 
-  <!-- we use DOMFPB because we want fbp also for the body tag.
-       Look at the last 3 lines in this file, for how to append fbp to the dom -->
-  <script src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.8/dist/DOMFBP.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.18/dist/doc-helper.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.18/dist/layout.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.18/dist/ui5.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.18/dist/data.js"></script>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.18/dist/util.js"></script>
 
+  <!-- we use DOMFPB because we want fbp also for the body tag. -->
+  <script>
+    import("https://cdn.jsdelivr.net/npm/@furo/precompiled@2.0.0-rc.18/dist/DOMFBP.js").then(() => {
+      // activate FBP on body
+      const fbphandle = new DOMFBP(document.body)
+      // enable tracing
+      fbphandle._FBPTraceWires();
+    })
 
-  <link href="/main.css" rel="stylesheet"/>
+  </script>
+  <link href="main.css" rel="stylesheet"  >
 
 </head>
 
 <body>
 <hr>
-  <p>
-    Press the load button to load some data for the charts.
-  </p>
-  <furo-ui5-button slot="action" label="load data" primary="" @-click="--btnListClicked">load data</furo-ui5-button>
-
+<p>
+  Press the load button to load some data for the charts.
+</p>
+<furo-ui5-button slot="action" label="load data" primary="" @-click="--btnListClicked">load data</furo-ui5-button>
 <hr>
-
 
 
 <furo-ui5-chart-display chart-type="radar" sparkline="" fixed-height="170">
@@ -97,10 +100,4 @@
 </body>
 
 
-    <script>
-      // activate FBP on body
-      const fbphandle = new DOMFBP(document.body)
-      // enable tracing
-      fbphandle._FBPTraceWires();
-    </script>
 </html>
