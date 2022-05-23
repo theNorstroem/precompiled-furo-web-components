@@ -28,7 +28,8 @@
   },
   "scripts": {
     "build": "rollup -c",
-    "start-cdn-sample": "superstatic ./sample/cdn/"
+    "start-cdn-sample": "superstatic ./sample/cdn/",
+    "start-min-sample": "superstatic ./sample/minimal/"
   },
   "files": [
     "dist"
