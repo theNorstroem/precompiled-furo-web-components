@@ -1,4 +1,4 @@
-import { Init, i18n,  Env } from "https://cdn.jsdelivr.net/npm/@furo/precompiled@2.4.0/dist/framework.js";
+import { Init, i18n,  Env } from "https://cdn.jsdelivr.net/npm/@furo/precompiled@2.6.0/dist/framework.js";
 
 import {Types,Services} from "./data_environment.js";
 
